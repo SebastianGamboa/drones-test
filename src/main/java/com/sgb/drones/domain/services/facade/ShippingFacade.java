@@ -40,6 +40,7 @@ public class ShippingFacade {
         var droneDto = droneFacade.getById(shippingRequest.getDroneId());
         var drone = new Drone(droneDto.id());
         var shipping = new Shipping(drone);
+        shipping.initialState();
         
         var items = itemService.getByIds(shippingRequest.getItemIds());
         
