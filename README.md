@@ -22,6 +22,12 @@ cd drones-test
 ./gradlew :bootRun
 ```
 
+## Run tests
+
+```sh
+./gradlew clean test
+```
+
 ## Access
 
 ```
